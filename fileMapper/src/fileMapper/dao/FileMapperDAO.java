@@ -29,6 +29,8 @@ public class FileMapperDAO {
 		return new String(Bytes);
 	}
 	static public DataSource getDataSource() {
+		//gnm
+		ds = null;
 		if (ds == null)
 			ds = DataSourceFactory.getDataSource();
 		return ds;
@@ -39,7 +41,14 @@ public class FileMapperDAO {
 static public void RunProcedure(String PROC, String[] inArgs, int[] outArgs,iProcessProcedure Processor)
 		throws I2B2Exception {
 	String[] proc = new String[]{PROC};
-	String[] args =fileMapper.util.Utils.combineArrays(proc, inArgs);
+	String[] args;
+	if(inArgs != null)
+	{
+	args =fileMapper.util.Utils.combineArrays(proc, inArgs);
+	}else
+	{
+		args = proc;
+	}
 	RunProcedure(args, outArgs, Processor);
 		
 }

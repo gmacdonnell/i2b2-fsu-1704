@@ -17,7 +17,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.util.Assert;
 
 import edu.harvard.i2b2.common.exception.I2B2Exception;
-import fileMapper.dao.DataTypes;
+import fileMapper.delegate.DataTypeHandler;
 import fileMapper.delegate.Handler;
 
 public class FileMapperService {
@@ -60,7 +60,7 @@ public class FileMapperService {
 		switch(requestType)
 		{
 		case DATATYPE_REQUEST:
-			handler = new DataTypes(); 
+			handler = new DataTypeHandler(); 
 			break;
 		case KEY_REQUEST:
 			break;
