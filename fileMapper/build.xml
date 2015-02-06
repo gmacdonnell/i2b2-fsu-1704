@@ -46,15 +46,24 @@
 	<!-- =================================================================== -->
 	<!-- 								COMMON JAXB GENERATION 				 -->
 	<!-- =================================================================== -->
-	<target name="jaxb_gen" depends="init" description="Generate JAXB classes for i2b2 and Vocab Data messages">
+	<target name="jaxb_gen">
+		<antcall target="jaxb_fileMapper" />
+		<antcall target="jaxb_i2b2" />
+	</target>
+	<target name="jaxb_fileMapper" depends="init" description="Generate JAXB FileMapper Cell">
 		<xjc extension="true" destdir="${gensrc}" removeOldOutput="no">
 			<schema dir="xml/xsd" includes="FileMapper_DataTypes.xsd" />
-			<schema dir="../${i2b2xmlproject}/xsd/hive/msg_1.1" includes="i2b2_response.xsd" />
-			<binding dir="." includes="xml/xsd/i2b2_response_message_bindings.xjb" />
 			<binding dir="." includes="xml/bindings/fileMapper_DataTypes_bindings.xjb" />
 		</xjc>
 		</target>
-
+	<target name="jaxb_i2b2" depends="init" description="Generate JAXB classes for i2b2 and Patient Data messages">
+				<xjc extension="true" destdir="${gensrc}" removeOldOutput="no">
+					<schema dir="../${i2b2xmlproject}/xsd/hive/msg_1.1" includes="i2b2_response.xsd" />
+					<schema dir="xml/bindings" includes="fileMapper_DataTypes.xsd" />
+					<binding dir="." includes="xml/bindings/I2b2_response.xjb" />
+					<binding dir="." includes="xml/bindings/fileMapper_DataTypes_bindings.xjb" />
+					</xjc>
+			</target>
 	<!-- =================================================================== -->
 	<!-- 								COMPILE 							 -->
 	<!-- =================================================================== -->
