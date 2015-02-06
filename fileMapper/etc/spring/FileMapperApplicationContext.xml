@@ -19,14 +19,22 @@
  </bean>
  
   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-    <property name="fileMapperDS" value="oracle.jdbc.driver.OracleDriver"/>
+    <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
     <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
     <property name="username" value="i2b2demodata"/>
     <property name="password" value="iolkIOLK"/>
     <property name="defaultAutoCommit" value="false"/>
     <property name="defaultReadOnly" value="true"/>
   </bean>
-  
+  <bean id="jaxbPackage"
+		class="org.springframework.beans.factory.config.ListFactoryBean">
+		<property name="sourceList">
+			<list>
+				<value>fileMapper.data.datavo.vdo</value>
+				<value>fileMapper.datavo.i2b2message</value>
+			</list>
+		</property>
+	</bean>
 </beans>
 
 <!-- *********************************************************************

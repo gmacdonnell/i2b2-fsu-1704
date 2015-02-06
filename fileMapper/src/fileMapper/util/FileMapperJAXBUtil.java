@@ -96,11 +96,11 @@ public class FileMapperJAXBUtil  {
 
 			if (appDir != null) {
 				FileSystemXmlApplicationContext ctx = new FileSystemXmlApplicationContext(
-						"file:" + appDir + "/" + "CRCApplicationContext.xml");
+						"file:" + appDir + "/" + "FileMapperApplicationContext.xml");
 				beanFactory = ctx.getBeanFactory();
 			} else {
 				FileSystemXmlApplicationContext ctx = new FileSystemXmlApplicationContext(
-						"classpath:" + "CRCApplicationContext.xml");
+						"classpath:" + "FileMapperApplicationContext.xml");
 				beanFactory = ctx.getBeanFactory();
 			}
 

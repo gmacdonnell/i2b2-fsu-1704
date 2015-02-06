@@ -8,8 +8,10 @@ import java.sql.PreparedStatement;
 
 import oracle.jdbc.OracleTypes;
 import edu.harvard.i2b2.common.exception.I2B2Exception;
+
 public class FileMapperDAO {
 	private static DataSource ds = null;
+
 	public String SQLSafeString(String value) {
 		byte[] Bytes = value.getBytes();
 
@@ -28,64 +30,60 @@ public class FileMapperDAO {
 
 		return new String(Bytes);
 	}
+
 	static public DataSource getDataSource() {
-		//gnm
-		ds = null;
+		// gnm
+		// ds = null;
 		if (ds == null)
 			ds = DataSourceFactory.getDataSource();
 		return ds;
 	}
-	
-	
-	//*combin proc name into Arg[]
-static public void RunProcedure(String PROC, String[] inArgs, int[] outArgs,iProcessProcedure Processor)
-		throws I2B2Exception {
-	String[] proc = new String[]{PROC};
-	String[] args;
-	if(inArgs != null)
-	{
-	args =fileMapper.util.Utils.combineArrays(proc, inArgs);
-	}else
-	{
-		args = proc;
-	}
-	RunProcedure(args, outArgs, Processor);
-		
-}
-	static public void RunProcedure(String[] inArgs, int[] outArgs,
-			iProcessProcedure Processor) throws I2B2Exception {
+
+	// *combin proc name into Arg[]
+
+	static public void RunProcedure(String process, String[] inArgs,
+			int[] outArgs, iProcessProcedure Processor) throws I2B2Exception {
 		Connection conn = null;
 		ResultSet RS = null;
+		int argCount = 0;
+		int inCounter = 1;
 		try {
-
+			if (inArgs != null) {
+				argCount += inArgs.length;
+			}
+			if (outArgs != null) {
+				argCount += outArgs.length;
+			}
 			conn = getDataSource().getConnection();
-			CallableStatement callStmt = conn.prepareCall("{call " + inArgs[0] + getArgCount(inArgs)
-					+ "}");
-			int inCounter = 1;
-			while (inCounter < inArgs.length) {
-				callStmt.setString(inCounter, inArgs[inCounter]);
-				inCounter++;
+			String call = "{call " + process + getArgHolders(argCount) + "}";
+			CallableStatement callStmt = conn.prepareCall(call);
+			if (inArgs != null) {
+				while (inCounter < inArgs.length) {
+					callStmt.setString(inCounter, inArgs[inCounter]);
+					inCounter++;
+				}
 			}
 			int outCounter = 0;
 			if (outArgs != null) {
+				// if(inCounter == 1){inCounter++;}
 				while (outCounter < outArgs.length) {
 					callStmt.registerOutParameter(inCounter + outCounter,
 							outArgs[outCounter]);
 					outCounter++;
 				}
 			}
-			callStmt.executeQuery();
-			int RsIndex = inCounter + outCounter - 1;
-			if (RsIndex > 0 && outCounter > 0) {
-				RS = (ResultSet) callStmt.getObject(RsIndex);
-			}
+
+			callStmt.execute();
+
 			if (Processor != null) {
-				if (RS != null) {
-					Processor.ProcessResults(RS);
-				}
-				if (outArgs != null) {
+
+				if (argCount > 0 && outCounter > 0) {
+					Processor.ProcessResults((ResultSet) callStmt
+							.getObject(argCount));
+				} else {
 					Processor.ProcessResults(callStmt, outArgs);
 				}
+
 			}
 			// this.getSQLServerProcedureError(dataSourceLookup.getServerType(),
 			// callStmt, 2);
@@ -104,23 +102,20 @@ static public void RunProcedure(String PROC, String[] inArgs, int[] outArgs,iPro
 					sqlEx.printStackTrace();
 					// log.error("Error while closing connection", sqlEx);
 				}
-				
+
 			}
 		}
 
 	}
-	
-	static private String getArgCount(String [] args)
-	{
-		String outVal ="(";
-		int counter = 1;
-		while(counter < args.length)
-		{
-			if(counter > 1)
-			{
-				outVal+=",";
+
+	static private String getArgHolders(int args) {
+		String outVal = "(";
+		int counter = 0;
+		while (counter < args) {
+			if (counter > 1) {
+				outVal += ",";
 			}
-			outVal +="?";
+			outVal += "?";
 			counter++;
 		}
 		outVal += ")";

@@ -3,7 +3,7 @@
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <jxb:bindings schemaLocation="xml/xsd/FileMapper_DataTypes.xsd" node="/xs:schema">
         <jxb:schemaBindings>
-	           <jxb:package name="fileMapper.data.datavo.vdo">
+	           <jxb:package name="fileMapper/data/datavo/vdotest">
 	  	     </jxb:package>
 	  	     <!-- 
 	  	     <jxb:nameXmlTransform>

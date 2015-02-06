@@ -34,19 +34,25 @@
 	<!-- =================================================================== -->
 	<!-- 								CLEAN 								 -->
 	<!-- =================================================================== -->
-	<target name="clean" depends="common_clean" description="Clean all build products" />
+	<target name="clean" depends="common_clean" description="Clean all build products" >
+		<echo message="Remove FileMapper products from ${jboss.home}"/>
+		<delete file="${jboss.home}/standalone/deployments/${axis2.war.name}/WEB-INF/lib/FileMapper*.jar" failonerror="true"/>
+		<delete file="${jboss.home}/standalone/deployments/i2b2.war/WEB-INF/services//FileMapper.aar
+"  failonerror="true"/>
+		<delete file="${jboss.home}/standalone/configuration/fileMapper/*.properties"  failonerror="true"/>
+	</target>
 
 
 	<!-- =================================================================== -->
 	<!-- 								COMMON JAXB GENERATION 				 -->
 	<!-- =================================================================== -->
 	<target name="jaxb_gen" depends="init" description="Generate JAXB classes for i2b2 and Vocab Data messages">
-				<xjc destdir="${gensrc}" removeOldOutput="yes">
-					<schema dir="../${i2b2xmlproject}/xsd/hive/msg_1.1" includes="i2b2_response.xsd" />
-					<schema dir="xml/xsd" includes="FileMapper_DataTypes.xsd" />
-					<binding dir="." includes="etc/xsd_1.1/i2b2_response_message_bindings.xjb" />
-					<binding dir="." includes="xml/bindings/fileMapper_DataTypes.xjb" />
-				</xjc>
+		<xjc extension="true" destdir="${gensrc}" removeOldOutput="no">
+			<schema dir="xml/xsd" includes="FileMapper_DataTypes.xsd" />
+			<schema dir="../${i2b2xmlproject}/xsd/hive/msg_1.1" includes="i2b2_response.xsd" />
+			<binding dir="." includes="xml/xsd/i2b2_response_message_bindings.xjb" />
+			<binding dir="." includes="xml/bindings/fileMapper_DataTypes_bindings.xjb" />
+		</xjc>
 		</target>
 
 	<!-- =================================================================== -->
@@ -86,7 +92,7 @@
 		</jar>
 	</target>
 	<!-- Jar core file -->
-	<target name="jar_core" depends="compile" description="Create Ont core jar">
+	<target name="jar_core" depends="compile" description="Create FIleMapper core">
 		<jar compress="true" jarfile="${dist}/${Name}-core.jar">
 			<fileset dir="${classes}">
 				<include name="**/datavo/**" />

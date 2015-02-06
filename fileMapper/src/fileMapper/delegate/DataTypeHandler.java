@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
+import oracle.jdbc.OracleTypes;
 import edu.harvard.i2b2.common.exception.I2B2Exception;
 import fileMapper.dao.FileMapperDAO;
 import fileMapper.dao.iProcessProcedure;
@@ -31,7 +32,7 @@ public class DataTypeHandler extends Handler implements iProcessProcedure {
 	public void ProcessResults(ResultSet RS) throws I2B2Exception {
 		if (RS != null) {
 			try {
-				while (RS.next()) {
+					while (RS.next()) {
 					DataType current = new DataType();
 					current.setName(RS.getString(TYPE_NAME));
 					current.setTableCD(RS.getString(TARGET_TABLE));
@@ -61,7 +62,8 @@ public class DataTypeHandler extends Handler implements iProcessProcedure {
 
 	@Override
 	public BodyType execute() throws I2B2Exception {
-		FileMapperDAO.RunProcedure(GET_DATATYPES, null, null, this);
+		int[] outArgs = { OracleTypes.CURSOR };
+		FileMapperDAO.RunProcedure(GET_DATATYPES, null, outArgs, this);
 		return fillBody(Types);
 		
 	}
