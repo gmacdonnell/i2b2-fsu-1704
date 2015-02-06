@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-		xmlns:map="http://fileMapper/data/datavo/vdo/"
-		targetNamespace="http://fileMapper/data/datavo/vdo/" >		
+		xmlns:map="http://www.fsu.edu/data/datavo/vdo/"
+		targetNamespace="http://www.fsu.edu/data/datavo/vdo/" >		
 
     <xs:complexType name="DataType">
     	<xs:sequence>

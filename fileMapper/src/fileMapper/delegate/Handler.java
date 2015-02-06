@@ -11,17 +11,18 @@ import edu.harvard.i2b2.common.exception.I2B2Exception;
 import edu.harvard.i2b2.common.util.jaxb.JAXBUnWrapHelper;
 import edu.harvard.i2b2.common.util.jaxb.JAXBUtil;
 import edu.harvard.i2b2.common.util.jaxb.JAXBUtilException;
-import fileMapper.datavo.i2b2message.ApplicationType;
-import fileMapper.datavo.i2b2message.BodyType;
-import fileMapper.datavo.i2b2message.InfoType;
-import fileMapper.datavo.i2b2message.MessageControlIdType;
-import fileMapper.datavo.i2b2message.MessageHeaderType;
-import fileMapper.datavo.i2b2message.PollingUrlType;
-import fileMapper.datavo.i2b2message.RequestMessageType;
-import fileMapper.datavo.i2b2message.ResponseHeaderType;
-import fileMapper.datavo.i2b2message.ResponseMessageType;
-import fileMapper.datavo.i2b2message.ResultStatusType;
-import fileMapper.datavo.i2b2message.StatusType;
+import fileMapper.data.datavo.i2b2message.ApplicationType;
+import fileMapper.data.datavo.i2b2message.StatusType;
+import fileMapper.data.datavo.i2b2message.BodyType;
+import fileMapper.data.datavo.i2b2message.InfoType;
+import fileMapper.data.datavo.i2b2message.MessageControlIdType;
+import fileMapper.data.datavo.i2b2message.MessageHeaderType;
+import fileMapper.data.datavo.i2b2message.PollingUrlType;
+import fileMapper.data.datavo.i2b2message.RequestMessageType;
+import fileMapper.data.datavo.i2b2message.ResponseHeaderType;
+import fileMapper.data.datavo.i2b2message.ResponseMessageType;
+import fileMapper.data.datavo.i2b2message.ResultStatusType;
+import fileMapper.data.datavo.i2b2message.StatusType;
 import fileMapper.davato.db.DataSourceLookup;
 import fileMapper.util.FileMapperJAXBUtil;
 
@@ -122,7 +123,7 @@ public abstract class Handler {
 		responseMessageType.setResponseHeader(responseHeader);
 		responseMessageType.setMessageBody(bodyType);
 
-		fileMapper.datavo.i2b2message.ObjectFactory of = new fileMapper.datavo.i2b2message.ObjectFactory();
+		fileMapper.data.datavo.i2b2message.ObjectFactory of = new fileMapper.data.datavo.i2b2message.ObjectFactory();
 		StringWriter strWriter = new StringWriter();
 		util.marshaller(of.createResponse(responseMessageType), strWriter);
 
@@ -156,7 +157,7 @@ public abstract class Handler {
 		StringWriter strWriter = new StringWriter();
 
 		try {
-			fileMapper.datavo.i2b2message.ObjectFactory of = new fileMapper.datavo.i2b2message.ObjectFactory();
+			fileMapper.data.datavo.i2b2message.ObjectFactory of = new fileMapper.data.datavo.i2b2message.ObjectFactory();
 			JAXBUtil jaxbUtil = FileMapperJAXBUtil.getJAXBUtil();
 			jaxbUtil.marshaller(of.createResponse(responseMessageType),
 					strWriter);
