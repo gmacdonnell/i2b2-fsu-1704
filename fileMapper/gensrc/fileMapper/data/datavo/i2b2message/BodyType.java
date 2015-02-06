@@ -6,27 +6,27 @@
 //
 
 
-package filemapper.data.datavo.vdo;
+package fileMapper.data.datavo.i2b2message;
 
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for GetDataTypes complex type.
+ * <p>Java class for bodyType complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="GetDataTypes">
+ * &lt;complexType name="bodyType">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Types" type="{http://fileMapper/data/datavo/vdo/}DataType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;any/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,41 +36,41 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "GetDataTypes", propOrder = {
-    "types"
+@XmlType(name = "bodyType", propOrder = {
+    "any"
 })
-public class GetDataTypes {
+public class BodyType {
 
-    @XmlElement(name = "Types")
-    protected List<DataType> types;
+    @XmlAnyElement(lax = true)
+    protected List<Object> any;
 
     /**
-     * Gets the value of the types property.
+     * Gets the value of the any property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the types property.
+     * This is why there is not a <CODE>set</CODE> method for the any property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getTypes().add(newItem);
+     *    getAny().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link DataType }
+     * {@link Object }
      * 
      * 
      */
-    public List<DataType> getTypes() {
-        if (types == null) {
-            types = new ArrayList<DataType>();
+    public List<Object> getAny() {
+        if (any == null) {
+            any = new ArrayList<Object>();
         }
-        return this.types;
+        return this.any;
     }
 
 }

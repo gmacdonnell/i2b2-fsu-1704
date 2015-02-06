@@ -56,12 +56,12 @@
 			<binding dir="." includes="xml/bindings/fileMapper_DataTypes_bindings.xjb" />
 		</xjc>
 		</target>
-	<target name="jaxb_i2b2" depends="init" description="Generate JAXB classes for i2b2 and Patient Data messages">
+	<target name="jaxb_i2b2" depends="init" description="Generate JAXB classes for i2b2 and i2b2message classess">
 				<xjc extension="true" destdir="${gensrc}" removeOldOutput="no">
 					<schema dir="../${i2b2xmlproject}/xsd/hive/msg_1.1" includes="i2b2_response.xsd" />
-					<schema dir="xml/bindings" includes="fileMapper_DataTypes.xsd" />
+					<schema dir="xml/xsd" includes="FileMapper_DataTypes.xsd" />
 					<binding dir="." includes="xml/bindings/I2b2_response.xjb" />
-					<binding dir="." includes="xml/bindings/fileMapper_DataTypes_bindings.xjb" />
+					<binding dir="." includes="xml/bindings/FileMapper_DataTypes_bindings.xjb" />
 					</xjc>
 			</target>
 	<!-- =================================================================== -->

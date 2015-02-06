@@ -12,7 +12,7 @@ import oracle.jdbc.OracleTypes;
 import edu.harvard.i2b2.common.exception.I2B2Exception;
 import fileMapper.dao.FileMapperDAO;
 import fileMapper.dao.iProcessProcedure;
-import fileMapper.datavo.i2b2message.BodyType;
+import filemapper.data.datavo.i2b2message.BodyType;
 import filemapper.data.datavo.vdo.DataType;
 
 public class DataTypeHandler extends Handler implements iProcessProcedure {

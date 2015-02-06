@@ -5,5 +5,5 @@
 // Generated on: 2015.02.06 at 03:42:34 PM EST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://fileMapper/data/datavo/vdo/")
-package filemapper.data.datavo.vdo;
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.i2b2.org/xsd/hive/msg/1.1/")
+package fileMapper.data.datavo.i2b2message;
