@@ -4,11 +4,11 @@
 -->
 <project basedir="." default="all" name="FileMapper Cell">
 
-	
-	<property name="Project" value="fileMapper" />
 
-	<property file="etc/spring/fileMapper_application_directory.properties"/>
-	
+	<property name="Project" value="fileMapper" />
+	<property name ="XMLFiles" value ='xml' />
+	<property file="etc/spring/fileMapper_application_directory.properties" />
+
 	<!-- ========== Executable Targets ======================================== -->
 	<property name="Name" value="FileMapper" />
 	<import file="../edu.harvard.i2b2.common/common_build.xml" />
@@ -34,28 +34,51 @@
 	<!-- =================================================================== -->
 	<!-- 								CLEAN 								 -->
 	<!-- =================================================================== -->
-	<target name="clean" depends="common_clean" description="Clean all build products" >
-		<echo message="Remove FileMapper products from ${jboss.home}"/>
-		<delete file="${jboss.home}/standalone/deployments/${axis2.war.name}/WEB-INF/lib/FileMapper*.jar" failonerror="true"/>
+	<target name="clean" depends="common_clean" description="Clean all build products">
+		<echo message="Remove FileMapper products from ${jboss.home}" />
+		<delete file="${jboss.home}/standalone/deployments/${axis2.war.name}/WEB-INF/lib/FileMapper*.jar" failonerror="true" />
 		<delete file="${jboss.home}/standalone/deployments/i2b2.war/WEB-INF/services//FileMapper.aar
-"  failonerror="true"/>
-		<delete file="${jboss.home}/standalone/configuration/fileMapper/*.properties"  failonerror="true"/>
+" failonerror="true" />
+		<delete file="${jboss.home}/standalone/configuration/fileMapper/*.properties" failonerror="true" />
 	</target>
 
 
 	<!-- =================================================================== -->
 	<!-- 								COMMON JAXB GENERATION 				 -->
 	<!-- =================================================================== -->
-	<target name="jaxb_gen">
+	<target name="jaxb_gen" depends="init">
+					 <java dir="." jar="../edu.harvard.i2b2.common/lib/jaxb/jaxb-xjc.jar" fork="true" failonerror="true" >
+					     <arg line="-quiet -nv -extension ${XMLFiles}/xsd/FileMapper_DataTypes.xsd 
+					     	../${i2b2xmlproject}/xsd/hive/msg_1.1/i2b2_response.xsd  
+					      	-b ${XMLFiles}/bindings/FileMapper_DataTypes_bindings.xjb 
+					     	${XMLFiles}/bindings/i2b2_response.xjb 
+
+					     -d ${gensrc}"/>
+					    
+					 	<jvmarg value="-Djava.endorsed.dirs=../edu.harvard.i2b2.common/lib/jaxb" />
+					     <classpath refid="classpath"/>
+					</java>
+			</target>
+
+<!--	<target name="jaxb_gen">
 		<antcall target="jaxb_fileMapper" />
 		<antcall target="jaxb_i2b2" />
 	</target>
 	<target name="jaxb_fileMapper" depends="init" description="Generate JAXB FileMapper Cell">
-		<xjc extension="true" destdir="${gensrc}" removeOldOutput="no">
+		<xjc extension="true" destdir="${gensrc}" removeOldOutput="yes"  >
 			<schema dir="xml/xsd" includes="FileMapper_DataTypes.xsd" />
-			<binding dir="." includes="xml/bindings/fileMapper_DataTypes_bindings.xjb" />
+			<binding dir="." includes="xml/bindings/FileMapper_DataTypes_bindings.xjb" />
 		</xjc>
-		</target>
+	</target>
+	<target name="jaxb_i2b2" depends="init" description="Generate JAXB classes for i2b2 and i2b2message classess">
+		<xjc extension="true" destdir="${gensrc}" removeOldOutput="no"  >
+			<schema dir="../${i2b2xmlproject}/xsd/hive/msg_1.1" includes="i2b2_response.xsd" />
+			<binding dir="." includes="xml/bindings/I2b2_response.xjb" />
+		</xjc>
+	</target>
+	
+	-->
+	<!-- this fails to bind more than one xsd 
 	<target name="jaxb_i2b2" depends="init" description="Generate JAXB classes for i2b2 and i2b2message classess">
 				<xjc extension="true" destdir="${gensrc}" removeOldOutput="no">
 					<schema dir="../${i2b2xmlproject}/xsd/hive/msg_1.1" includes="i2b2_response.xsd" />
@@ -64,6 +87,8 @@
 					<binding dir="." includes="xml/bindings/FileMapper_DataTypes_bindings.xjb" />
 					</xjc>
 			</target>
+			
+			-->
 	<!-- =================================================================== -->
 	<!-- 								COMPILE 							 -->
 	<!-- =================================================================== -->
@@ -81,23 +106,23 @@
 	<!-- =================================================================== -->
 	<!-- 								DIST 								 -->
 	<!-- =================================================================== -->
-	<target name="dist"  description="package application for distribution/deployment">
+	<target name="dist" description="package application for distribution/deployment">
 		<echo message="${Name}: Creating the archive package!" />
 		<antcall target="axis2aar" />
 		<antcall target="jar_core" />
 		<antcall target="dist-server" />
 	</target>
-	
+
 	<!-- Axis2 archive file -->
 	<target name="axis2aar" depends="compile" description="Create Axis2 archive file">
 		<jar compress="true" jarfile="${dist}/${Name}.aar">
 			<fileset dir="${classes}">
-				<include name="**/**" /> 
+				<include name="**/**" />
 				<exclude name="**/datavo/**" />
 			</fileset>
 			<zipfileset dir="${etc}/axis2/" prefix="META-INF" includes="services.xml" />
-			<zipfileset dir="../${i2b2CommonProject}/dist/" prefix="lib" includes="*.jar"/>
-						
+			<zipfileset dir="../${i2b2CommonProject}/dist/" prefix="lib" includes="*.jar" />
+
 		</jar>
 	</target>
 	<!-- Jar core file -->
@@ -105,15 +130,15 @@
 		<jar compress="true" jarfile="${dist}/${Name}-core.jar">
 			<fileset dir="${classes}">
 				<include name="**/datavo/**" />
-				</fileset> 
+			</fileset>
 			<zipfileset dir="${etc}/axis2/" prefix="META-INF" includes="services.xml" />
-		</jar> 
-		</target>
+		</jar>
+	</target>
 
 	<!-- =================================================================== -->
 	<!-- 								SERVER DIST							 -->
 	<!-- =================================================================== -->
-	<target name="dist-server"  description="package application for distribution/deployment">
+	<target name="dist-server" description="package application for distribution/deployment">
 		<echo message="${Name}: Creating the server archive package!" />
 		<jar compress="true" jarfile="${dist}/${Name}-Server.jar">
 			<fileset dir="${etc}/spring">
@@ -122,65 +147,65 @@
 		</jar>
 	</target>
 
-	
+
 	<!-- =================================================================== -->
 	<!-- 								ALL 								 -->
 	<!-- =================================================================== -->
 	<target name="all" depends="dist">
 	</target>
-	
+
 	<!-- =================================================================== -->
 	<!-- 								JBOSS DEPLOY 						 -->
 	<!-- =================================================================== -->
-	<target name="deploy"  description="Deployment step:copy distribution jar files to app server">
-			<echo message="${Name}: Copying archive package to app server ${jboss.home}" />
+	<target name="deploy" description="Deployment step:copy distribution jar files to app server">
+		<echo message="${Name}: Copying archive package to app server ${jboss.home}" />
 		<copy todir="${jboss.home}/standalone/deployments/${axis2.war.name}/WEB-INF/lib">
 			<fileset dir="${dist}">
 				<exclude name="**/**.aar" />
-				<exclude name="**/*client.jar"/>
+				<exclude name="**/*client.jar" />
 			</fileset>
 		</copy>
-		<echo message ="copy aar file"  />
+		<echo message="copy aar file" />
 		<copy todir="${jboss.home}/standalone/deployments/${axis2.war.name}/WEB-INF/services">
 			<fileset dir="${dist}">
 				<include name="**/**.aar" />
 			</fileset>
 		</copy>
-					
+
 		<copy todir="${jboss.home}/standalone/deployments">
 			<fileset dir="${etc}/jboss">
-			<!--	<exclude name="**/jboss.xml" /> -->
+				<!--	<exclude name="**/jboss.xml" /> -->
 			</fileset>
 		</copy>
-		
-			<echo message="copying property files to ${fileMapper.applicationdir}"/>
-			<copy todir="${fileMapper.applicationdir}">
-				<fileset dir="${etc}/spring">
-					<exclude name="fileMapper_application_directory.properties" />
-				</fileset>
-			</copy>
-		</target>
-	
+
+		<echo message="copying property files to ${fileMapper.applicationdir}" />
+		<copy todir="${fileMapper.applicationdir}">
+			<fileset dir="${etc}/spring">
+				<exclude name="fileMapper_application_directory.properties" />
+			</fileset>
+		</copy>
+	</target>
+
 
 	<!-- =================================================================== -->
 	<!-- 								JBOSS DEPLOY ARCHIVE ONLY						 -->
-	<!-- =================================================================== -->	
+	<!-- =================================================================== -->
 	<target name="service_deploy">
 		<echo message="${Name}: Copying archive package to app server ${jboss.home}" />
 		<copy todir="${jboss.home}/standalone/deployments/${axis2.war.name}/WEB-INF/lib">
 			<fileset dir="${dist}">
 				<exclude name="**/**.aar" />
-				<exclude name="**/*client.jar"/>
+				<exclude name="**/*client.jar" />
 			</fileset>
 		</copy>
-		
+
 		<copy todir="${jboss.home}/standalone/deployments/${axis2.war.name}/WEB-INF/services">
 			<fileset dir="${dist}">
 				<include name="**/**.aar" />
 			</fileset>
 		</copy>
 	</target>
-	
+
 
 	<!-- ==================================================================== -->
 	<!-- 								WSDL Sample							  -->
@@ -193,8 +218,8 @@
 			</fileset>
 			<zipfileset dir="${src}/sample/resources/" prefix="META-INF" includes="services.xml" />
 			<zipfileset dir="${src}/sample/resources/" prefix="META-INF" includes="fileMapperSoapService.wsdl" />
-			<zipfileset dir="../${i2b2CommonProject}/dist/" prefix="lib" includes="*.jar"/>
-						
+			<zipfileset dir="../${i2b2CommonProject}/dist/" prefix="lib" includes="*.jar" />
+
 		</jar>
 	</target>
 
@@ -209,15 +234,15 @@
 			<classpath refid="classpath" />
 		</java>
 
-	
-		
+
+
 	</target>
 
 
 	<!-- =================================================================== -->
 	<!-- 			RUN JUNIT TESTS AND GENERATE REPORT			 			 -->
 	<!-- =================================================================== -->
-	<target name="test" depends="compile"  description="Compile and run JUnit tests and testcases">
+	<target name="test" depends="compile" description="Compile and run JUnit tests and testcases">
 		<echo message="${Name}: Running test cases!" />
 		<property name="reports.dir" value="${report}" />
 		<!-- run the unit tests -->
@@ -245,5 +270,5 @@
 		</junitreport>
 		<fail message="Tests failed." if="test.failed" />
 	</target>
-	
+
 </project>
