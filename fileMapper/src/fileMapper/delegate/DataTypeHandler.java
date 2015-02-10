@@ -12,8 +12,9 @@ import oracle.jdbc.OracleTypes;
 import edu.harvard.i2b2.common.exception.I2B2Exception;
 import fileMapper.dao.FileMapperDAO;
 import fileMapper.dao.iProcessProcedure;
+import fileMapper.data.datavo.vdo.DataType;
 import fileMapper.data.datavo.i2b2message.BodyType;
-import filemapper.data.datavo.vdo.*;
+
 
 public class DataTypeHandler extends Handler implements iProcessProcedure {
 
@@ -85,7 +86,7 @@ public class DataTypeHandler extends Handler implements iProcessProcedure {
 	{
 		BodyType body = new BodyType();
 		Iterator<DataType> i = types.iterator();
-		filemapper.data.datavo.vdo.ObjectFactory of = new filemapper.data.datavo.vdo.ObjectFactory();
+		fileMapper.data.datavo.vdo.ObjectFactory of = new fileMapper.data.datavo.vdo.ObjectFactory();
 		while(i.hasNext()){
 			DataType current = i.next();
 			body.getAny().add(of.createGetDataType(current));
