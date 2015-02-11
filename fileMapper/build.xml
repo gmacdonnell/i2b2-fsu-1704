@@ -50,8 +50,8 @@
 					 <java dir="." jar="../edu.harvard.i2b2.common/lib/jaxb/jaxb-xjc.jar" fork="true" failonerror="true" >
 					     <arg line="-quiet -nv -extension ${XMLFiles}/xsd/FileMapper_DataTypes.xsd 
 					     	../${i2b2xmlproject}/xsd/hive/msg_1.1/i2b2_response.xsd  
-					      	-b ${XMLFiles}/bindings/FileMapper_DataTypes_bindings.xjb 
-					     	${XMLFiles}/bindings/i2b2_response.xjb 
+					      	-b ${XMLFiles}/bindings/FileMapper_DataTypes_binding.xjb 
+					     	${XMLFiles}/bindings/I2b2_response.xjb 
 
 					     -d ${gensrc}"/>
 					    

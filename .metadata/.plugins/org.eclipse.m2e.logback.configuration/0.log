@@ -1,0 +1,94 @@
+2015-02-10 11:52:05,731 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fileMapper:fileMapperCell:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/fileMapper/pom.xml.
+2015-02-10 11:52:06,294 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-10 11:52:07,128 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.data_simulator:idiginfo.i2b2.data_simulator:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/pom.xml.
+2015-02-10 11:52:07,266 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.testing:dao:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.stats/pom.xml.
+2015-02-10 11:52:07,427 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.testing:dao:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.stats/pom.xml.
+2015-02-10 11:52:07,639 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.data_simulator:idiginfo.i2b2.data_simulator:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/pom.xml.
+2015-02-10 11:52:07,941 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fileMapper:fileMapperCell:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/fileMapper/pom.xml.
+2015-02-10 12:09:21,321 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-10 12:09:21,854 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:09:21,859 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-10 12:09:21,863 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:09:21,867 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-10 12:09:33,017 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:09:33,028 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-02-10 12:09:33,032 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:09:33,037 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-02-10 12:09:33,696 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:09:33,702 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/src/main/resources
+2015-02-10 12:09:33,704 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:09:33,708 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/src/test/resources
+2015-02-10 12:09:34,885 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:09:34,915 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-02-10 12:09:34,917 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:09:34,921 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-02-10 12:10:36,080 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fileMapper:fileMapperCell:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/fileMapper/pom.xml.
+2015-02-10 12:10:36,211 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-10 12:10:36,666 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.data_simulator:idiginfo.i2b2.data_simulator:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/pom.xml.
+2015-02-10 12:10:36,786 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.testing:dao:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.stats/pom.xml.
+2015-02-10 12:15:10,895 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-10 12:15:11,274 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:15:11,279 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-10 12:15:11,285 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:15:11,291 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-10 12:15:12,350 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:15:12,361 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-02-10 12:15:12,365 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:15:12,371 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-02-10 12:15:13,196 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:15:13,202 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/src/main/resources
+2015-02-10 12:15:13,204 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:15:13,210 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/src/test/resources
+2015-02-10 12:17:57,211 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:17:57,217 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-10 12:17:57,219 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:17:57,225 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-10 12:17:57,418 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:17:57,436 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-02-10 12:17:57,440 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:17:57,448 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-02-10 12:20:16,509 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:20:16,514 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-10 12:20:16,516 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:20:16,522 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-10 12:22:42,694 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:22:42,701 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-10 12:22:42,705 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 12:22:42,711 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-10 12:35:57,987 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fileMapper:fileMapperCell:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/fileMapper/pom.xml.
+2015-02-10 12:35:58,296 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-10 12:35:58,988 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.data_simulator:idiginfo.i2b2.data_simulator:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/pom.xml.
+2015-02-10 12:35:59,266 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.testing:dao:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.stats/pom.xml.
+2015-02-10 13:11:22,129 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fileMapper:fileMapperCell:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/fileMapper/pom.xml.
+2015-02-10 13:11:22,392 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-10 13:11:22,759 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.data_simulator:idiginfo.i2b2.data_simulator:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/pom.xml.
+2015-02-10 13:11:22,873 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.testing:dao:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.stats/pom.xml.
+2015-02-10 13:13:46,829 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-10 13:13:47,175 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:13:47,180 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-10 13:13:47,185 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:13:47,190 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-10 13:13:48,145 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:13:48,156 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-02-10 13:13:48,159 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:13:48,165 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-02-10 13:13:49,044 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:13:49,050 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/src/main/resources
+2015-02-10 13:13:49,052 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:13:49,058 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/src/test/resources
+2015-02-10 13:21:14,492 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:21:14,497 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-10 13:21:14,499 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:21:14,505 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-10 13:23:21,835 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:23:21,841 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-10 13:23:21,845 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:23:21,852 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-10 13:27:02,650 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:27:02,656 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-10 13:27:02,658 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-10 13:27:02,664 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-11 08:44:43,670 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fileMapper:fileMapperCell:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/fileMapper/pom.xml.
+2015-02-11 08:44:43,929 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-11 08:44:44,458 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.data_simulator:idiginfo.i2b2.data_simulator:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/pom.xml.
+2015-02-11 08:44:44,520 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.testing:dao:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.stats/pom.xml.
