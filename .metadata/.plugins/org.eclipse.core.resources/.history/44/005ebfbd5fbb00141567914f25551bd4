@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service name="FileMapperService" scope="request">
+    <description>
+        Project Management Processing Service
+    </description>
+    <operation name="getDataTypes">
+        <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+    </operation>
+     <operation name="getKeys">
+        <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+    </operation>
+     <operation name="getDimensions">
+        <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+    </operation>
+     <operation name="getServices">
+        <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+    </operation>
+    <parameter name="ServiceClass">fileMapper.axis2.FileMapperService</parameter>
+</service>

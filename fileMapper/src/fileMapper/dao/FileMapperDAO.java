@@ -58,14 +58,13 @@ public class FileMapperDAO {
 			String call = "{call " + process + getArgHolders(argCount) + "}";
 			CallableStatement callStmt = conn.prepareCall(call);
 			if (inArgs != null) {
-				while (inCounter < inArgs.length) {
-					callStmt.setString(inCounter, inArgs[inCounter]);
+				while (inCounter <= inArgs.length) {
+					callStmt.setString(inCounter, inArgs[inCounter-1]);
 					inCounter++;
 				}
 			}
 			int outCounter = 0;
 			if (outArgs != null) {
-				// if(inCounter == 1){inCounter++;}
 				while (outCounter < outArgs.length) {
 					callStmt.registerOutParameter(inCounter + outCounter,
 							outArgs[outCounter]);
@@ -112,7 +111,7 @@ public class FileMapperDAO {
 		String outVal = "(";
 		int counter = 0;
 		while (counter < args) {
-			if (counter > 1) {
+			if (counter > 0) {
 				outVal += ",";
 			}
 			outVal += "?";

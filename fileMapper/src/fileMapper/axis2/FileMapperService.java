@@ -18,13 +18,18 @@ import org.springframework.util.Assert;
 
 import edu.harvard.i2b2.common.exception.I2B2Exception;
 import fileMapper.delegate.DataTypeHandler;
+import fileMapper.delegate.DimensionHandler;
 import fileMapper.delegate.Handler;
+import fileMapper.delegate.KeyHandler;
+import fileMapper.delegate.MapHandler;
 
 public class FileMapperService {
 	
 	public static final String DATATYPE_REQUEST="dataTypeRequest";
 	public static final String KEY_REQUEST="keyRequest";
 	public static final String DIM_REQUEST="dimensionRequest";
+	public static final String MAPS_REQUEST="mapRequest";
+	public static final String MAP_ELEMENTS_REQUEST="mapElementRequest";
 	/** log **/
 	protected final Log log = LogFactory.getLog(getClass());
 	
@@ -46,13 +51,25 @@ public class FileMapperService {
 		Assert.notNull(omElement,
 				"Setfinder request OMElement must not be null");
 		log.debug("Inside getKeys request " + omElement);
-		return handleRequest(DATATYPE_REQUEST, omElement);
+		return handleRequest(KEY_REQUEST, omElement);
 	}
 	public OMElement getDimensions(OMElement omElement) {
 		Assert.notNull(omElement,
 				"Setfinder request OMElement must not be null");
 		log.debug("Inside getDimensions " + omElement);
-		return handleRequest(DATATYPE_REQUEST, omElement);
+		return handleRequest(DIM_REQUEST, omElement);
+	}
+	public OMElement getMaps(OMElement omElement) {
+		Assert.notNull(omElement,
+				"Setfinder request OMElement must not be null");
+		log.debug("Inside getDimensions " + omElement);
+		return handleRequest(MAPS_REQUEST, omElement);
+	}
+	public OMElement getMapElements(OMElement omElement) {
+		Assert.notNull(omElement,
+				"Setfinder request OMElement must not be null");
+		log.debug("Inside getDimensions " + omElement);
+		return handleRequest(MAP_ELEMENTS_REQUEST, omElement);
 	}
 	private OMElement handleRequest(String requestType, OMElement request)
 	{
@@ -63,8 +80,17 @@ public class FileMapperService {
 			handler = new DataTypeHandler(); 
 			break;
 		case KEY_REQUEST:
+			handler = new KeyHandler(); 
 			break;
 		case DIM_REQUEST:
+			handler = new DimensionHandler();
+			break;
+		case MAPS_REQUEST:
+			handler = new MapHandler();
+			break;
+		case MAP_ELEMENTS_REQUEST:
+			handler = new MapHandler();
+			((MapHandler)handler).setLoadElements(true);
 			break;
 		default:
 			break;

@@ -1,0 +1,72 @@
+package fileMapper.delegate;
+
+import java.sql.CallableStatement;
+import java.sql.ResultSet;
+import java.util.LinkedList;
+
+import oracle.jdbc.OracleTypes;
+import edu.harvard.i2b2.common.exception.I2B2Exception;
+import fileMapper.dao.FileMapperDAO;
+import fileMapper.dao.iProcessProcedure;
+import fileMapper.data.datavo.i2b2message.BodyType;
+import fileMapper.data.datavo.vdo.DataType;
+
+public class KeyHandler extends Handler implements iProcessProcedure{
+
+	static public String GET_FIELDS="GET_DATA_TYPE_FIELDS";
+	static public String TARGET_TABLE="TARGET_TABLE";
+	static public String TYPE_NAME="TYPE_NAME";
+	static public String IS_DIM="IS_DIM_TABLE";
+	protected LinkedList<DataType> Types;
+
+	public KeyHandler()
+	{
+		Types = new LinkedList<DataType>();
+	}
+	@Override
+	public String handleRequest(String message) throws I2B2Exception {
+			fillTypes(message);
+			 execute();
+			String results = null;
+			try{
+				results = buildResponseMessage(message, body);
+			}catch(Exception e)
+			{
+				log.error(e.toString());
+				throw new I2B2Exception(e.toString());
+			}
+			return results;
+	}
+
+
+	
+	public void execute() throws I2B2Exception {
+		int[] outArgs = { OracleTypes.CURSOR };
+		String[]inArgs = {TargetTable};
+		FileMapperDAO.RunProcedure(GET_FIELDS, inArgs, outArgs, this);
+		return fillBody(Types);
+		
+	}
+
+
+
+	@Override
+	public void ProcessResults(ResultSet RS) throws I2B2Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@Override
+	public void ProcessResults(CallableStatement callStmt, int[] outArgs)
+			throws I2B2Exception {
+		// TODO Auto-generated method stub
+		
+	}
+	private void fillTypes(String message)
+	{
+		
+	}
+
+}

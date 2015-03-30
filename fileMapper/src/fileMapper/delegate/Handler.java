@@ -3,6 +3,7 @@ package fileMapper.delegate;
 import java.io.StringWriter;
 
 import javax.xml.bind.JAXBElement;
+import javax.xml.bind.Unmarshaller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -23,6 +24,7 @@ import fileMapper.data.datavo.i2b2message.ResponseHeaderType;
 import fileMapper.data.datavo.i2b2message.ResponseMessageType;
 import fileMapper.data.datavo.i2b2message.ResultStatusType;
 import fileMapper.data.datavo.i2b2message.StatusType;
+import fileMapper.data.datavo.vdo.GetDataTypes;
 import fileMapper.davato.db.DataSourceLookup;
 import fileMapper.util.FileMapperJAXBUtil;
 
@@ -39,7 +41,7 @@ public abstract class Handler {
 	 * 
 	 * @return response xml message
 	 */
-	public abstract BodyType execute() throws I2B2Exception;
+	
 
 	/**
 	 * Class to fetch specific request message from i2b2 message xml
@@ -187,5 +189,47 @@ public abstract class Handler {
 	protected DataSourceLookup getDataSourceLookup() {
 		return dataSourceLookup;
 	}
+	public  GetDataTypes extractTypes(String resltMessage) throws I2B2Exception
+	{
+		
+	try{
+		JAXBElement jaxbElement = FileMapperJAXBUtil.getJAXBUtil()
+				.unMashallFromString(resltMessage);
+		RequestMessageType respMessageType = (RequestMessageType) jaxbElement
+				.getValue();
+
+		BodyType bodyType = respMessageType.getMessageBody();
+		
+		
+			Unmarshaller unmarshaller = FileMapperJAXBUtil.getUnmarshaller(GetDataTypes.class);
+			for(int index = 0; index < bodyType.getAny().size(); index ++)
+			{
+				Object temp = bodyType.getAny().get(index);
+				if(temp.getClass() == JAXBElement.class)
+				{
+					GetDataTypes types = (GetDataTypes)((JAXBElement)temp).getValue();
+					return types;
+				}
+				
+			}
+			return null;
+		
+		}catch(Exception e)
+		{
+			log.error(e.toString());
+			throw new I2B2Exception(e.getMessage());
+		}
+				
+	}
+	protected BodyType fillBody(GetDataTypes types)
+	{	
+		fileMapper.data.datavo.vdo.ObjectFactory of = new fileMapper.data.datavo.vdo.ObjectFactory();
+		BodyType body = new BodyType();
+		body.getAny().add(of.createGetGetDataTypes(types));
+		
+		
+		return body;
+	}
+
 
 }

@@ -14,6 +14,10 @@ package fileMapper.util;
 import java.util.List;
 import java.util.Properties;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.BeanFactory;
@@ -49,6 +53,10 @@ public class FileMapperJAXBUtil  {
 	/** log **/
 	protected final static Log log = LogFactory
 			.getLog(FileMapperJAXBUtil.class);
+	
+	/*context and class loader needed for unmarshaling*/
+	private static JAXBContext jaxbContext = null;
+	private static ClassLoader loader = null;
 
 	//@SuppressWarnings("unchecked")
 	public static JAXBUtil getJAXBUtil() {
@@ -107,8 +115,46 @@ public class FileMapperJAXBUtil  {
 		}
 		return beanFactory;
 	}
+	public static String makePackageString(String[] packageName) {
+		StringBuffer givenPackageName = new StringBuffer();
 
-	
+		for (int i = 0; i < packageName.length; i++) {
+			givenPackageName.append(packageName[i]);
+
+			if ((i + 1) < packageName.length) {
+				givenPackageName.append(":");
+			}
+		}
+
+		return givenPackageName.toString();
+	}
+
+
+	public static JAXBContext getJAXBContext(Class jaxbClass) throws JAXBException {
+
+		if (jaxbContext == null) {
+			if (jaxbClass != null) {
+				jaxbContext = JAXBContext.newInstance(jaxbClass);
+			} else {
+				BeanFactory springBean = getInstance().getSpringBeanFactory();
+				List jaxbPackageName = (List) springBean.getBean("jaxbPackage");
+				String[] jaxbPackageNameArray = (String[]) jaxbPackageName.toArray(new String[] {});
+				String packages = makePackageString(jaxbPackageNameArray);
+				if(loader == null){
+					loader = FileMapperJAXBUtil.class.getClassLoader();
+				}
+				jaxbContext = JAXBContext.newInstance(packages, loader);
+			}
+		}
+
+		return jaxbContext;
+	}
+
+	public static Unmarshaller getUnmarshaller(Class jaxbClass) throws JAXBException {
+		Unmarshaller unmarshaller = getJAXBContext(jaxbClass)
+				.createUnmarshaller();
+		return unmarshaller;
+	}
 	
 }
 

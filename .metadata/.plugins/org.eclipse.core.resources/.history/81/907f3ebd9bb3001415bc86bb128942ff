@@ -1,0 +1,158 @@
+package fileMapper.delegate;
+
+import java.sql.CallableStatement;
+import java.sql.ResultSet;
+import java.util.LinkedList;
+import java.util.List;
+
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.Unmarshaller;
+
+import oracle.jdbc.OracleTypes;
+import edu.harvard.i2b2.common.exception.I2B2Exception;
+import edu.harvard.i2b2.common.util.jaxb.JAXBUtil;
+import fileMapper.dao.FileMapperDAO;
+import fileMapper.dao.iProcessProcedure;
+import fileMapper.data.datavo.i2b2message.BodyType;
+import fileMapper.data.datavo.i2b2message.RequestMessageType;
+import fileMapper.data.datavo.vdo.DataType;
+import fileMapper.data.datavo.vdo.GetDataTypes;
+import fileMapper.util.FileMapperJAXBUtil;
+
+public class KeyHandler extends Handler implements iProcessProcedure{
+
+	static public String GET_FIELDS="GET_DATA_TYPE_FIELDS";
+	static public String TARGET_TABLE="TARGET_TABLE";
+	static public String TYPE_NAME="TYPE_NAME";
+	static public String IS_DIM="IS_DIM_TABLE";
+	protected LinkedList<DataType> Types;
+	protected String TargetTable;
+
+	public KeyHandler()
+	{
+		Types = new LinkedList<DataType>();
+	}
+	@Override
+	public String handleRequest(String message) throws I2B2Exception {
+			fillTypes(message);
+			 execute();
+			String results = null;
+			try{
+				results = buildResponseMessage(message, body);
+			}catch(Exception e)
+			{
+				log.error(e.toString());
+				throw new I2B2Exception(e.toString());
+			}
+			return results;
+	}
+
+
+	
+	public BodyType execute() throws I2B2Exception {
+		int[] outArgs = { OracleTypes.CURSOR };
+		String[]inArgs = {TargetTable};
+		FileMapperDAO.RunProcedure(GET_FIELDS, inArgs, outArgs, this);
+		return fillBody(Types);
+		
+	}
+
+
+
+	@Override
+	public void ProcessResults(ResultSet RS) throws I2B2Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@Override
+	public void ProcessResults(CallableStatement callStmt, int[] outArgs)
+			throws I2B2Exception {
+		// TODO Auto-generated method stub
+		
+	}
+	private BodyType fillBody(GetDataTypes types)
+	{
+		fileMapper.data.datavo.vdo.ObjectFactory of = new fileMapper.data.datavo.vdo.ObjectFactory();
+		BodyType body = new BodyType();
+		
+		body.getAny().add(of.createGetGetDataTypes(types));
+		
+		
+		return body;
+	}
+	private BodyType fillBody(List<DataType> types)
+	{
+		fileMapper.data.datavo.vdo.ObjectFactory of = new fileMapper.data.datavo.vdo.ObjectFactory();
+		BodyType body = new BodyType();
+		GetDataTypes getTypes = new GetDataTypes();
+		for(DataType type : types)
+		{
+			getTypes.getTypes().add(type);
+		}
+		body.getAny().add(of.createGetGetDataTypes(getTypes));
+		
+		
+		return body;
+	}
+	private void fillTypes(String requestXml)
+	{
+		
+		String response = null;
+		JAXBUtil jaxbUtil = FileMapperJAXBUtil.getJAXBUtil();
+
+		try {
+			JAXBElement jaxbElement = jaxbUtil.unMashallFromString(requestXml);
+			RequestMessageType requestMessageType = (RequestMessageType) jaxbElement
+					.getValue();
+			BodyType bodyType = requestMessageType.getMessageBody();
+
+			if (bodyType == null) {
+				log.error("null value in body type");
+				throw new I2B2Exception("null value in body type");
+			}
+
+			
+			
+					
+	}catch(Exception e)
+		{
+		  log.equals(e);
+		}
+	}
+		public  GetDataTypes extractTypes(String resltMessage) throws I2B2Exception
+		{
+			
+		try{
+			JAXBElement jaxbElement = FileMapperJAXBUtil.getJAXBUtil()
+					.unMashallFromString(resltMessage);
+			RequestMessageType respMessageType = (RequestMessageType) jaxbElement
+					.getValue();
+
+			BodyType bodyType = respMessageType.getMessageBody();
+			
+			
+				Unmarshaller unmarshaller = FileMapperJAXBUtil.getUnmarshaller(GetDataTypes.class);
+				for(int index = 0; index < bodyType.getAny().size(); index ++)
+				{
+					Object temp = bodyType.getAny().get(index);
+					if(temp.getClass() == JAXBElement.class)
+					{
+						GetDataTypes types = (GetDataTypes)((JAXBElement)temp).getValue();
+						return types;
+					}
+					
+				}
+				return null;
+			
+			}catch(Exception e)
+			{
+				log.error(e.toString());
+				throw new I2B2Exception(e.getMessage());
+			}
+					
+		}
+
+}

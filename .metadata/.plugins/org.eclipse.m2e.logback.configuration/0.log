@@ -92,3 +92,263 @@
 2015-02-11 08:44:43,929 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
 2015-02-11 08:44:44,458 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.data_simulator:idiginfo.i2b2.data_simulator:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.data_simulator/pom.xml.
 2015-02-11 08:44:44,520 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: idiginfo.i2b2.testing:dao:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/idiginfo.i2b2.stats/pom.xml.
+2015-02-11 09:28:19,769 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-11 09:28:20,286 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:28:20,292 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-11 09:28:20,296 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:28:20,301 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-11 09:31:00,732 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:31:00,740 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-11 09:31:00,745 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:31:00,751 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-11 09:33:15,185 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:33:15,191 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-11 09:33:15,193 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:33:15,198 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-11 09:41:08,221 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:41:08,226 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-11 09:41:08,229 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:41:08,237 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-11 09:49:03,474 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-11 09:49:04,358 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:49:04,364 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-11 09:49:04,368 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:49:04,373 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-11 09:53:53,531 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:53:53,539 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-11 09:53:53,543 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 09:53:53,548 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-11 10:01:39,392 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 10:01:39,397 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-11 10:01:39,399 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 10:01:39,405 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-11 10:27:30,049 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-11 10:27:30,755 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 10:27:30,762 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-11 10:27:30,767 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-11 10:27:30,772 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-13 11:06:00,719 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-8.1.14.v20131031
+2015-02-13 11:06:00,761 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@127.0.0.1:42608
+2015-02-13 12:17:30,897 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 12:17:30,911 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-13 12:17:30,915 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 12:17:30,921 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-13 12:22:37,351 [Worker-179] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 12:22:37,366 [Worker-179] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-13 12:22:37,369 [Worker-179] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 12:22:37,375 [Worker-179] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-13 12:23:34,437 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 12:23:34,447 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-13 12:23:34,450 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 12:23:34,455 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-13 12:55:49,158 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-13 12:55:49,673 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 12:55:49,678 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-13 12:55:49,682 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 12:55:49,687 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-13 12:56:26,538 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 12:56:26,545 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-13 12:56:26,550 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 12:56:26,556 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-13 13:34:12,229 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-8.1.14.v20131031
+2015-02-13 13:34:12,258 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@127.0.0.1:44812
+2015-02-13 13:34:51,062 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:34:51,068 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-13 13:34:51,071 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:34:51,076 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-13 13:37:54,413 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:37:54,420 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-13 13:37:54,423 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:37:54,428 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-13 13:38:20,853 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:38:20,862 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-13 13:38:20,866 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:38:20,873 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-13 13:45:18,928 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:45:18,934 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-13 13:45:18,938 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:45:18,945 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-13 13:51:29,468 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-13 13:51:30,110 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:51:30,116 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-13 13:51:30,121 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:51:30,126 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-13 13:53:04,844 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:53:04,850 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-13 13:53:04,853 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-13 13:53:04,858 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 07:46:27,794 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-16 07:46:28,797 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 07:46:28,803 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 07:46:28,808 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 07:46:28,813 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 07:47:18,638 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 07:47:18,643 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 07:47:18,646 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 07:47:18,652 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 07:47:47,356 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 07:47:47,362 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 07:47:47,364 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 07:47:47,369 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:08:18,487 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:08:18,495 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:08:18,497 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:08:18,503 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:08:39,435 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:08:39,440 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:08:39,443 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:08:39,451 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:10:55,845 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:10:55,851 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:10:55,856 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:10:55,862 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:12:31,499 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:12:31,504 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:12:31,506 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:12:31,513 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:14:28,187 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:14:28,193 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:14:28,197 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:14:28,203 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:15:03,824 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:15:03,830 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:15:03,832 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:15:03,840 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:18:56,413 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-16 08:18:56,966 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:18:56,972 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:18:56,976 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:18:56,983 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:21:44,164 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:21:44,170 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:21:44,174 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:21:44,182 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:23:54,478 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:23:54,484 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:23:54,487 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:23:54,492 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:25:38,354 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:25:38,359 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:25:38,361 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:25:38,367 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:27:31,354 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:27:31,359 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:27:31,362 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:27:31,368 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:34:43,032 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:34:43,040 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:34:43,044 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:34:43,051 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:35:48,504 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:35:48,509 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:35:48,512 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:35:48,518 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:36:52,886 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:36:52,894 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:36:52,898 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:36:52,905 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:38:19,404 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:38:19,409 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:38:19,411 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:38:19,419 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:43:16,742 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:43:16,749 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 08:43:16,752 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 08:43:16,759 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 08:51:57,217 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fileMapper:fileMapperCell:0.0.1-SNAPSHOT @ /remote_opt/workspace/git/fileMapper/pom.xml.
+2015-02-16 08:51:57,309 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-16 09:00:30,159 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring:jar:2.0-m2 is missing, no dependency information available
+2015-02-16 09:00:30,201 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:00:30,207 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:00:30,211 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:00:30,216 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:01:51,079 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:01:51,084 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:01:51,088 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:01:51,094 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:03:56,060 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:03:56,066 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:03:56,069 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:03:56,074 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:10:38,541 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:10:38,546 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:10:38,550 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:10:38,556 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:11:16,551 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:11:16,557 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:11:16,559 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:11:16,565 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:13:34,153 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:13:34,160 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:13:34,165 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:13:34,170 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:16:27,420 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:16:27,425 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:16:27,428 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:16:27,433 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:19:32,592 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:19:32,598 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:19:32,602 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:19:32,607 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:20:56,293 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:20:56,299 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:20:56,301 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:20:56,306 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:22:44,801 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:22:44,807 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:22:44,811 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:22:44,816 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:27:16,889 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:27:16,895 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:27:16,899 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:27:16,904 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:28:18,273 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:28:18,279 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:28:18,283 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:28:18,288 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:30:23,834 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:30:23,839 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:30:23,842 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:30:23,847 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:31:01,230 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:31:01,238 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:31:01,241 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:31:01,246 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:34:19,894 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:34:19,900 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:34:19,903 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:34:19,908 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 09:36:51,365 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:36:51,372 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 09:36:51,375 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 09:36:51,380 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 11:36:22,336 [Worker-91] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 11:36:22,341 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 11:36:22,344 [Worker-91] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 11:36:22,349 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 13:22:47,368 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:22:47,374 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 13:22:47,378 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:22:47,383 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 13:25:49,784 [Worker-122] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:25:49,789 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 13:25:49,792 [Worker-122] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:25:49,796 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 13:31:34,113 [Worker-131] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:31:34,121 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 13:31:34,125 [Worker-131] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:31:34,130 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 13:32:34,489 [Worker-126] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:32:34,495 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 13:32:34,497 [Worker-126] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:32:34,502 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 13:36:57,955 [Worker-136] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:36:57,961 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 13:36:57,964 [Worker-136] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:36:57,971 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-16 13:38:17,261 [Worker-135] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:38:17,266 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/main/resources
+2015-02-16 13:38:17,268 [Worker-135] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-02-16 13:38:17,273 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /remote_opt/workspace/git/fileMapper/src/test/resources
+2015-02-18 08:18:31,828 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-8.1.14.v20131031
+2015-02-18 08:18:31,879 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@127.0.0.1:53924

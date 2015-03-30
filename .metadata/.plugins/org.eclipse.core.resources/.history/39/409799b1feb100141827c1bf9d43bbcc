@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<!--
+  - Application context definition for i2b2 with spring jdbc template.
+    $Id: FIleMapperApplicationContext.xml,v 1.6 2010/06/01 20:10:49 rk903 Exp $
+  -->
+<beans>
+
+<bean id="appType" class="fileMapper.data.datavo.i2b2message.ApplicationType">
+    <property name="applicationName" value="fileMapper"/>
+    <property name="applicationVersion" value="1.701"/>
+  </bean>
+  
+ 
+  
+ <bean id="message_header" class="fileMapper.data.datavo.i2b2message.MessageHeaderType">
+ 	<property name="sendingApplication" ref="appType"/>
+ </bean>
+ 
+  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+    <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+    <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+    <property name="username" value="i2b2demodata"/>
+    <property name="password" value="iolkIOLK"/>
+    <property name="defaultAutoCommit" value="false"/>
+    <property name="defaultReadOnly" value="true"/>
+  </bean>
+  <bean id="jaxbPackage"
+		class="org.springframework.beans.factory.config.ListFactoryBean">
+		<property name="sourceList">
+			<list>
+				<value>fileMapper.data.datavo.vdo</value>
+				<value>fileMapper.datavo.i2b2message</value>
+			</list>
+		</property>
+	</bean>
+</beans>
+
+<!-- *********************************************************************
+  $Log: FileMapperApplicationContext.xml,v $
+ 
+
+  *************************************************************************  -->  

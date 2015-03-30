@@ -15,5 +15,14 @@
      <operation name="getServices">
         <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
     </operation>
+     <operation name="getMaps">
+        <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+    </operation>
+     <operation name="getMapElements">
+        <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+    </operation>
+     <operation name="AddMap">
+        <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+    </operation>
     <parameter name="ServiceClass">fileMapper.axis2.FileMapperService</parameter>
 </service>

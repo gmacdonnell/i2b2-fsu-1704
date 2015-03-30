@@ -13,21 +13,22 @@ import edu.harvard.i2b2.common.exception.I2B2Exception;
 import fileMapper.dao.FileMapperDAO;
 import fileMapper.dao.iProcessProcedure;
 import fileMapper.data.datavo.vdo.DataType;
+import fileMapper.data.datavo.vdo.GetDataTypes;
 import fileMapper.data.datavo.i2b2message.BodyType;
 
 
 public class DataTypeHandler extends Handler implements iProcessProcedure {
 
 	static public String GET_DATATYPES="GET_DATA_TYPES";
-	static public String GET_FIELDS="GET_DATA_TYPE_FIELDS";
+
 	static public String TARGET_TABLE="TARGET_TABLE";
 	static public String TYPE_NAME="TYPE_NAME";
 	static public String IS_DIM="IS_DIM_TABLE";
-	protected LinkedList<DataType> Types;
+	protected GetDataTypes Types;
 	
 	public DataTypeHandler()
 	{
-		Types = new LinkedList<DataType>();
+		Types = new GetDataTypes();
 	}
 	@Override
 	public void ProcessResults(ResultSet RS) throws I2B2Exception {
@@ -43,7 +44,7 @@ public class DataTypeHandler extends Handler implements iProcessProcedure {
 					}else{
 					current.setIsDimension(false);
 					}
-					Types.add(current);
+					Types.getTypes().add(current);
 					
 					}
 				
@@ -61,7 +62,7 @@ public class DataTypeHandler extends Handler implements iProcessProcedure {
 
 	}
 
-	@Override
+
 	public BodyType execute() throws I2B2Exception {
 		int[] outArgs = { OracleTypes.CURSOR };
 		FileMapperDAO.RunProcedure(GET_DATATYPES, null, outArgs, this);
@@ -82,17 +83,5 @@ public class DataTypeHandler extends Handler implements iProcessProcedure {
 		}
 		return results;
 	}
-	protected BodyType fillBody(List<DataType> types)
-	{
-		BodyType body = new BodyType();
-		Iterator<DataType> i = types.iterator();
-		fileMapper.data.datavo.vdo.ObjectFactory of = new fileMapper.data.datavo.vdo.ObjectFactory();
-		while(i.hasNext()){
-			DataType current = i.next();
-			body.getAny().add(of.createGetDataType(current));
-		}
-		
-		return body;
-	}
-
+	
 }

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:map="http://www.fsu.edu/data/datavo/vdo/" targetNamespace="http://www.fsu.edu/data/datavo/vdo/">
+
+	<xs:complexType name="DataType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" maxOccurs="1"
+				minOccurs="1">
+			</xs:element>
+			<xs:element name="table_CD" type="xs:string" maxOccurs="1"
+				minOccurs="1">
+			</xs:element>
+			<xs:element name="field_set" type="map:DataTypeField"
+				maxOccurs="unbounded" minOccurs="0">
+			</xs:element>
+			<xs:element name="isDimension" type="xs:boolean"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="DataTypeField">
+		<xs:sequence>
+			<xs:element name="table_CD" type="xs:string"></xs:element>
+			<xs:element name="field_CD" type="xs:string"></xs:element>
+			<xs:element name="dataType" type="xs:string"></xs:element>
+			<xs:element name="isKey" type="xs:boolean"></xs:element>
+			<xs:element name="isSystemSet" type="xs:boolean"></xs:element>
+			<xs:element name="DESCR" type="xs:string"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+  <xs:complexType name="Map">
+    	<xs:sequence>
+    		<xs:element name="MAP_ID" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+    		<xs:element name="SOURCE_ID" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+    		<xs:element name="DESCR" type="xs:string"></xs:element>
+    		<xs:element name="ELEMENTS" type="map:Map_Element" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Map_Element">
+    	<xs:sequence>
+    		<xs:element name="ELEMENT_ID" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+    		<xs:element name="COLUMN_INDEX" type="xs:int" maxOccurs="1" minOccurs="1"></xs:element>
+    		<xs:element name="ACTIVE" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+    		<xs:element name="TARGET_TABLE" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+    		<xs:element name="FIELD_NAME" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+	
+	<xs:complexType name="Keys">
+		<xs:sequence>
+			<xs:element name="Table" type="map:DataType" maxOccurs="1"
+				minOccurs="1">
+			</xs:element>
+			<xs:element name="Keys" type="map:DataTypeField"
+				maxOccurs="unbounded" minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="get_Keys" type="map:GetKeys"></xs:element>
+
+	<xs:complexType name="GetDataTypes">
+		<xs:sequence>
+			<xs:element name="Types" type="map:DataType" maxOccurs="unbounded"
+				minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="get_GetDataTypes" type="map:GetDataTypes"></xs:element>
+
+	<xs:complexType name="Fields">
+		<xs:sequence>
+			<xs:element name="Type" type="map:DataType" maxOccurs="1"
+				minOccurs="1">
+			</xs:element>
+			<xs:element name="Fields" type="map:DataTypeField"
+				maxOccurs="unbounded" minOccurs="1"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="GetKeys">
+		<xs:sequence>
+			<xs:element name="KeySets" type="map:Keys" maxOccurs="unbounded"
+				minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	 <xs:complexType name="GetMaps">
+    	<xs:sequence>
+			<xs:element name="MapSets" type="map:Map" maxOccurs="unbounded"
+				minOccurs="0"></xs:element>
+		</xs:sequence>
+    </xs:complexType>
+	<xs:element name="get_dataType" type="map:DataType"></xs:element>
+	<xs:element name="get_dataTypeField" type="map:DataType"></xs:element>
+	<xs:element name="get_Map" type="map:Map"></xs:element>
+	<xs:element name="get_MapElement" type="map:Map_Element"></xs:element>
+
+</xs:schema>

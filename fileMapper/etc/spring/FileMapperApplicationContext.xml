@@ -7,14 +7,14 @@
   -->
 <beans>
 
-<bean id="appType" class="fileMapper.datavo.i2b2message.ApplicationType">
+<bean id="appType" class="fileMapper.data.datavo.i2b2message.ApplicationType">
     <property name="applicationName" value="fileMapper"/>
     <property name="applicationVersion" value="1.701"/>
   </bean>
   
  
   
- <bean id="message_header" class="fileMapper.datavo.i2b2message.MessageHeaderType">
+ <bean id="message_header" class="fileMapper.data.datavo.i2b2message.MessageHeaderType">
  	<property name="sendingApplication" ref="appType"/>
  </bean>
  
@@ -31,7 +31,7 @@
 		<property name="sourceList">
 			<list>
 				<value>fileMapper.data.datavo.vdo</value>
-				<value>fileMapper.datavo.i2b2message</value>
+				<value>fileMapper.data.datavo.i2b2message</value>
 			</list>
 		</property>
 	</bean>
